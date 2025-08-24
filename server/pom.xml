@@ -17,6 +17,19 @@
 
   <build>
     <finalName>${project.artifactId}</finalName>
+    
+    <plugins>
+      <!-- Compiler Plugin: Force Java 21 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <source>21</source>
+          <target>21</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 
   <dependencies>
@@ -32,7 +45,7 @@
       <scope>test</scope>
     </dependency>
 
-    <dependency> 
+    <dependency>
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-library</artifactId>
       <scope>test</scope>
