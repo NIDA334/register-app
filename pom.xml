@@ -33,7 +33,7 @@
 
   <build>
     <plugins>
-      <!-- ✅ Updated compiler plugin -->
+      <!-- ✅ Updated compiler plugin for Java 17 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -94,7 +94,7 @@
 
     <pluginManagement>
       <plugins>
-        <!-- ✅ Remove old compiler plugin version -->
+        <!-- Old plugins remain same, compiler plugin already updated above -->
         <plugin>
           <artifactId>maven-checkstyle-plugin</artifactId>
           <version>2.8</version>
